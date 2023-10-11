@@ -22,7 +22,7 @@ public class Menu {
                 case 1:
                     System.out.print("Nome do contato: ");
                     String nome = scanner.nextLine();
-                    System.out.print("Número de telefone: ");
+                    System.out.print("Numero de telefone: ");
                     String numeroTelefone = scanner.nextLine();
 
                     Contato novoContato = new Contato(nome, numeroTelefone);
