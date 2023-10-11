@@ -16,7 +16,7 @@ public class Menu {
             System.out.println("6. Sair");
 
             int escolha = scanner.nextInt();
-            scanner.nextLine(); // Consumir a nova linha
+            scanner.nextLine();
 
             switch (escolha) {
                 case 1:
@@ -46,7 +46,7 @@ public class Menu {
                     if (contatoEncontrado != null) {
                         System.out.println("Contato encontrado: " + contatoEncontrado);
                     } else {
-                        System.out.println("Contato não encontrado.");
+                        System.out.println("Contato nao encontrado.");
                     }
                     break;
                 case 4:
@@ -63,7 +63,7 @@ public class Menu {
                         agenda.atualizarContato(nomeAtualizar, novoContatoAtualizado);
                         System.out.println("Contato atualizado com sucesso.");
                     } else {
-                        System.out.println("Contato não encontrado.");
+                        System.out.println("Contato nao encontrado.");
                     }
                     break;
                 case 5:
@@ -75,7 +75,7 @@ public class Menu {
                     scanner.close();
                     System.exit(0);
                 default:
-                    System.out.println("Opção invalida. Tente novamente.");
+                    System.out.println("Opcao invalida. Tente novamente.");
             }
         }
     }
