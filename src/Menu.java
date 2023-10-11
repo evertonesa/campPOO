@@ -7,11 +7,11 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\nEscolha uma opção:");
+            System.out.println("\nEscolha uma opcao:");
             System.out.println("1. Adicionar um novo contato");
             System.out.println("2. Remover um contato existente");
             System.out.println("3. Buscar um contato pelo nome");
-            System.out.println("4. Atualizar informações de um contato");
+            System.out.println("4. Atualizar informacoes de um contato");
             System.out.println("5. Listar todos os contatos na agenda");
             System.out.println("6. Sair");
 
@@ -30,7 +30,7 @@ public class Menu {
                         agenda.adicionarContato(novoContato);
                         System.out.println("Contato adicionado com sucesso.");
                     } else {
-                        System.out.println("Contato com o mesmo nome já existe na agenda.");
+                        System.out.println("Contato com o mesmo nome ja existe na agenda.");
                     }
                     break;
                 case 2:
@@ -56,7 +56,7 @@ public class Menu {
                     if (contatoExistente != null) {
                         System.out.print("Novo nome: ");
                         nome = scanner.nextLine();
-                        System.out.print("Novo número de telefone: ");
+                        System.out.print("Novo numero de telefone: ");
                         numeroTelefone = scanner.nextLine();
 
                         Contato novoContatoAtualizado = new Contato(nome, numeroTelefone);
@@ -75,7 +75,7 @@ public class Menu {
                     scanner.close();
                     System.exit(0);
                 default:
-                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("Opção invalida. Tente novamente.");
             }
         }
     }
